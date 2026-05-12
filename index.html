@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0A1430" />
+
+  <title>Masjidul Ameen · Osogbo, Nigeria — An Invitation to Invest in Eternity</title>
+  <meta name="description" content="Help build Masjidul Ameen, a new masjid and learning centre in Osogbo, Nigeria. An invitation to invest in eternity." />
+
+  <link rel="canonical" href="https://masjidulameen.com/" />
+  <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://masjidulameen.com/" />
+  <meta property="og:title" content="Masjidul Ameen · Osogbo, Nigeria" />
+  <meta property="og:description" content="An invitation to invest in eternity. Help us build Masjidul Ameen." />
+  <meta property="og:image" content="https://masjidulameen.com/images/flyer-exterior-square.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Masjidul Ameen · Osogbo, Nigeria" />
+  <meta name="twitter:description" content="An invitation to invest in eternity." />
+  <meta name="twitter:image" content="https://masjidulameen.com/images/flyer-exterior-square.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Reem+Kufi:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/dist/style.css" />
+</head>
+
+<body class="min-h-screen flex flex-col">
+
+  <!-- Skip link -->
+  <a href="#main"
+     class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50
+            focus:bg-gold focus:text-ink-900 focus:px-4 focus:py-2 focus:rounded-md focus:font-semibold">
+    Skip to content
+  </a>
+
+  <!-- Top nav -->
+  <header id="site-nav"
+          class="fixed top-0 inset-x-0 z-40 transition-all duration-300">
+    <div class="container-narrow flex items-center justify-between py-4 px-6">
+      <a href="#" class="flex items-center gap-3 group" aria-label="Masjidul Ameen — home">
+        <svg viewBox="0 0 64 64" class="w-9 h-9 shrink-0" aria-hidden="true">
+          <rect width="64" height="64" rx="10" fill="#0A1430" stroke="#C9A24A" stroke-width="2"/>
+          <path d="M32 14 C 22 14, 18 24, 18 34 L 18 52 L 46 52 L 46 34 C 46 24, 42 14, 32 14 Z"
+                fill="none" stroke="#C9A24A" stroke-width="2.5" stroke-linejoin="round"/>
+          <circle cx="32" cy="26" r="2" fill="#C9A24A"/>
+        </svg>
+        <span class="flex flex-col leading-none">
+          <span dir="rtl" lang="ar" class="font-kufi font-semibold text-xl text-white">
+            مسجد <span class="text-gold">الأمين</span>
+          </span>
+          <span class="text-[10px] tracking-[0.3em] uppercase text-cream/60 mt-1">
+            Masjidul Ameen
+          </span>
+        </span>
+      </a>
+
+      <nav aria-label="Primary" class="hidden md:flex items-center gap-8 text-sm tracking-wide">
+        <a href="#hadith"  class="text-cream/80 hover:text-gold transition">Hadith</a>
+        <a href="#about"   class="text-cream/80 hover:text-gold transition">About</a>
+        <a href="#vision"  class="text-cream/80 hover:text-gold transition">Vision</a>
+        <a href="#donate"  class="text-cream/80 hover:text-gold transition">Donate</a>
+        <a href="#contact" class="text-cream/80 hover:text-gold transition">Contact</a>
+        <a href="#donate"  class="btn-gold !py-2 !px-5 text-sm">Donate</a>
+      </nav>
+
+      <button id="nav-toggle"
+              class="md:hidden flex items-center justify-center w-10 h-10 rounded-md border border-ink-line text-cream"
+              aria-controls="mobile-nav" aria-expanded="false" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+          <line x1="3" y1="6"  x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav overlay -->
+  <div id="mobile-nav"
+       class="hidden fixed inset-0 z-30 bg-ink-900/98 backdrop-blur-md pt-24 px-6 md:hidden">
+    <nav aria-label="Mobile" class="flex flex-col items-center gap-6 text-xl">
+      <a href="#hadith"  class="text-cream hover:text-gold">Hadith</a>
+      <a href="#about"   class="text-cream hover:text-gold">About</a>
+      <a href="#vision"  class="text-cream hover:text-gold">Vision</a>
+      <a href="#donate"  class="text-cream hover:text-gold">Donate</a>
+      <a href="#contact" class="text-cream hover:text-gold">Contact</a>
+      <a href="#donate"  class="btn-gold mt-4">Donate to Build</a>
+    </nav>
+  </div>
+
+  <main id="main" class="flex-1">
+
+    <!-- HERO -->
+    <section id="hero"
+             class="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <!-- Decorative star pattern -->
+      <div class="absolute inset-0 bg-pattern-stars opacity-60 pointer-events-none" aria-hidden="true"></div>
+      <!-- Decorative gradient orbs -->
+      <div class="absolute -top-32 -left-32 w-[480px] h-[480px] rounded-full bg-gold/10 blur-3xl pointer-events-none" aria-hidden="true"></div>
+      <div class="absolute -bottom-40 -right-40 w-[560px] h-[560px] rounded-full bg-ink-700/40 blur-3xl pointer-events-none" aria-hidden="true"></div>
+
+      <!-- Subtle mihrab silhouette -->
+      <svg class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[480px] h-[560px] opacity-[0.05] pointer-events-none"
+           viewBox="0 0 100 130" aria-hidden="true" fill="none">
+        <path d="M50 5 C 25 5, 15 30, 15 55 L 15 125 L 85 125 L 85 55 C 85 30, 75 5, 50 5 Z"
+              stroke="#C9A24A" stroke-width="0.6"/>
+        <path d="M50 25 C 35 25, 28 38, 28 52 L 28 110 L 72 110 L 72 52 C 72 38, 65 25, 50 25 Z"
+              stroke="#C9A24A" stroke-width="0.4"/>
+        <line x1="50" y1="5" x2="50" y2="125" stroke="#C9A24A" stroke-width="0.3"/>
+      </svg>
+
+      <div class="container-narrow relative z-10 text-center px-6 py-32">
+        <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full
+                     bg-gold/10 border border-gold/30 text-gold text-xs tracking-[0.3em] uppercase
+                     mb-10 animate-fade-in">
+          <span class="w-1.5 h-1.5 rounded-full bg-gold animate-pulse"></span>
+          Coming Soon
+        </span>
+
+        <h1 dir="rtl" lang="ar"
+            class="font-kufi font-semibold text-6xl sm:text-7xl md:text-8xl lg:text-[9rem]
+                   text-white leading-[1.15] mb-4 animate-fade-up">
+          مسجد <span class="text-gold">الأمين</span>
+        </h1>
+
+        <p class="font-display tracking-[0.3em] uppercase text-base md:text-xl text-cream/85 mb-3 animate-fade-up"
+           style="animation-delay: 100ms;">
+          Masjidul Ameen
+        </p>
+
+        <p class="text-muted text-xs md:text-sm tracking-[0.4em] uppercase mb-10 animate-fade-up"
+           style="animation-delay: 180ms;">
+          Osogbo &nbsp;·&nbsp; Nigeria
+        </p>
+
+        <div class="divider-rule mb-10">
+          <span class="text-gold">◆</span>
+        </div>
+
+        <p class="font-display italic text-xl md:text-2xl text-cream/90 max-w-2xl mx-auto leading-relaxed text-balance mb-4 animate-fade-up"
+           style="animation-delay: 240ms;">
+          “Whoever builds a masjid for Allāh, Allāh will build a house for him in Paradise.”
+        </p>
+        <p class="text-xs md:text-sm tracking-[0.3em] uppercase text-gold/80 mb-12 animate-fade-up"
+           style="animation-delay: 320ms;">
+          — al-Bukhārī &amp; Muslim
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center gap-4 animate-fade-up"
+             style="animation-delay: 400ms;">
+          <a href="#donate" class="btn-gold">
+            Donate to Build
+            <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#vision" class="btn-ghost">The Vision</a>
+        </div>
+
+        <p class="mt-16 text-xs tracking-[0.3em] uppercase text-muted/80 animate-fade-in"
+           style="animation-delay: 600ms;">
+          An invitation to invest in eternity
+        </p>
+      </div>
+
+      <!-- Scroll cue -->
+      <a href="#hadith" aria-label="Scroll to next section"
+         class="absolute bottom-8 left-1/2 -translate-x-1/2 text-gold/60 hover:text-gold animate-float-y">
+        <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </a>
+    </section>
+
+    <!-- HADITH -->
+    <section id="hadith" class="section bg-ink-900 relative overflow-hidden">
+      <div class="absolute inset-0 bg-pattern-stars opacity-20 pointer-events-none" aria-hidden="true"></div>
+
+      <div class="container-narrow relative">
+        <div class="text-center" data-reveal>
+          <p class="section-label">
+            <span class="divider-rule"><span>The Hadith</span></span>
+          </p>
+
+          <blockquote lang="ar" dir="rtl"
+                      class="font-arabic text-3xl sm:text-4xl md:text-5xl text-white leading-[2] mt-12 mb-10 px-2">
+            عَنْ عُثْمَانَ بْنِ عَفَّانَ رَضِيَ اللَّهُ عَنْهُ قَالَ:
+            قَالَ رَسُولُ اللَّهِ ﷺ:
+            <span class="block mt-6 text-gold-soft">
+              «مَنْ بَنَى مَسْجِدًا لِلَّهِ، بَنَى اللَّهُ لَهُ بَيْتًا فِي الْجَنَّةِ»
+            </span>
+          </blockquote>
+
+          <div class="divider-rule my-10"><span class="text-gold">◆</span></div>
+
+          <p class="font-display italic text-xl md:text-2xl text-cream/90 max-w-3xl mx-auto leading-relaxed text-balance">
+            Narrated by ʿUthmān ibn ʿAffān (may Allāh be pleased with him): the Messenger of Allāh ﷺ said,
+            <span class="text-white">“Whoever builds a masjid for Allāh, Allāh will build a house for him in Paradise.”</span>
+          </p>
+
+          <p class="mt-8 text-xs md:text-sm tracking-[0.3em] uppercase text-gold/80">
+            Reported by al-Bukhārī &amp; Muslim
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section bg-ink-800/40">
+      <div class="container-narrow grid md:grid-cols-12 gap-12 items-start">
+        <div class="md:col-span-7" data-reveal>
+          <p class="section-label">About the project</p>
+          <h2 class="section-title text-balance">
+            A new masjid, rising in Osogbo
+          </h2>
+
+          <div class="space-y-5 text-cream/85 leading-relaxed text-pretty md:text-lg">
+            <p>
+              <strong class="text-white">Masjidul Ameen</strong> is a new masjid being built in
+              Osogbo, Osun State, Nigeria, by the
+              <strong class="text-white">At-Tasfiyah wat-Tarbiyah Islamic Learning Centre</strong> —
+              a community dedicated to <em class="text-gold-soft">tasfiyah</em>, purifying
+              Islamic practice in line with the Qurʾān and the authentic Sunnah upon the
+              understanding of the salaf, and <em class="text-gold-soft">tarbiyah</em>, raising
+              a generation upon that practice.
+            </p>
+            <p>
+              The masjid is designed not only as a place of prayer, but as a hub for daily
+              circles of knowledge, Qurʾān memorisation, and community gathering. It is a
+              quiet, lasting investment — for Osogbo, and for the ākhirah.
+            </p>
+            <p class="text-cream/70">
+              The campaign is currently in its fundraising phase. Every contribution, large
+              or small, brings the foundations a little closer to being laid.
+            </p>
+          </div>
+        </div>
+
+        <div class="md:col-span-5" data-reveal>
+          <div class="card border-gold/20 relative overflow-hidden">
+            <div class="absolute inset-0 bg-pattern-stars opacity-30 pointer-events-none" aria-hidden="true"></div>
+            <div class="relative">
+              <p class="section-label !mb-3">The Centre</p>
+              <h3 class="font-display text-2xl text-white leading-snug mb-4">
+                At-Tasfiyah wat-Tarbiyah Islamic Learning Centre
+              </h3>
+              <p class="text-cream/80 leading-relaxed mb-6">
+                Purification &amp; Education. A community of teachers, students, and families
+                committed to the methodology of the salaf.
+              </p>
+
+              <dl class="grid grid-cols-2 gap-4 text-sm">
+                <div>
+                  <dt class="stat-label">Location</dt>
+                  <dd class="text-white mt-1">Osogbo, Osun State</dd>
+                </div>
+                <div>
+                  <dt class="stat-label">Status</dt>
+                  <dd class="text-white mt-1">In fundraising</dd>
+                </div>
+                <div>
+                  <dt class="stat-label">TIN</dt>
+                  <dd class="text-white mt-1 tabular-nums">IT9525953</dd>
+                </div>
+                <div>
+                  <dt class="stat-label">Focus</dt>
+                  <dd class="text-white mt-1">Prayer · Teaching</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISION -->
+    <section id="vision" class="section bg-ink-900">
+      <div class="container-narrow">
+        <div class="text-center mb-16" data-reveal>
+          <p class="section-label"><span class="divider-rule"><span>The Vision</span></span></p>
+          <h2 class="section-title text-balance">A house built for prayer,<br class="hidden md:block" /> and for learning</h2>
+          <p class="text-cream/80 max-w-2xl mx-auto md:text-lg leading-relaxed">
+            From a wide, light-filled prayer hall to a minaret rising over the compound — every
+            detail is shaped around the rhythms of daily worship and the work of teaching.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 md:gap-10">
+          <figure class="group" data-reveal>
+            <div data-video-frame
+                 class="relative overflow-hidden rounded-xl border border-ink-line aspect-video bg-ink-800 cursor-pointer
+                        transition-all duration-300 group-hover:border-gold/40 group-hover:shadow-2xl group-hover:shadow-black/50">
+              <video data-vision-video
+                     class="w-full h-full object-cover block"
+                     poster="/images/flyer-exterior-square.jpg"
+                     muted loop playsinline preload="metadata"
+                     aria-label="Architectural fly-through — exterior of Masjidul Ameen">
+                <source src="/images/video-exterior.mp4" type="video/mp4" />
+                Your browser does not support embedded video. View the
+                <a href="/images/video-exterior.mp4" class="text-gold underline">exterior fly-through</a>.
+              </video>
+
+              <!-- Play hint overlay (shown while paused) -->
+              <div data-play-hint
+                   class="absolute inset-0 flex items-center justify-center bg-ink-900/40 transition-opacity duration-300 pointer-events-none">
+                <span class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gold/95 flex items-center justify-center shadow-2xl shadow-black/50">
+                  <svg viewBox="0 0 24 24" class="w-7 h-7 md:w-9 md:h-9 text-ink-900 translate-x-[2px]" fill="currentColor" aria-hidden="true">
+                    <polygon points="6 4 20 12 6 20"></polygon>
+                  </svg>
+                </span>
+              </div>
+
+              <!-- Corner label -->
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-ink-900/80 backdrop-blur-sm text-[10px] tracking-[0.3em] uppercase text-gold/90 border border-gold/30">
+                Exterior
+              </span>
+            </div>
+            <figcaption class="mt-5 text-center">
+              <span class="block text-xs tracking-[0.3em] uppercase text-gold mb-1">Exterior</span>
+              <span class="text-cream/80">A walk-through of the masjid, courtyard, and minaret.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="group" data-reveal>
+            <div data-video-frame
+                 class="relative overflow-hidden rounded-xl border border-ink-line aspect-video bg-ink-800 cursor-pointer
+                        transition-all duration-300 group-hover:border-gold/40 group-hover:shadow-2xl group-hover:shadow-black/50">
+              <video data-vision-video
+                     class="w-full h-full object-cover block"
+                     poster="/images/flyer-interior-portrait.jpg"
+                     muted loop playsinline preload="metadata"
+                     aria-label="Architectural fly-through — interior of Masjidul Ameen">
+                <source src="/images/video-interior.mp4" type="video/mp4" />
+                Your browser does not support embedded video. View the
+                <a href="/images/video-interior.mp4" class="text-gold underline">interior fly-through</a>.
+              </video>
+
+              <div data-play-hint
+                   class="absolute inset-0 flex items-center justify-center bg-ink-900/40 transition-opacity duration-300 pointer-events-none">
+                <span class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gold/95 flex items-center justify-center shadow-2xl shadow-black/50">
+                  <svg viewBox="0 0 24 24" class="w-7 h-7 md:w-9 md:h-9 text-ink-900 translate-x-[2px]" fill="currentColor" aria-hidden="true">
+                    <polygon points="6 4 20 12 6 20"></polygon>
+                  </svg>
+                </span>
+              </div>
+
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-ink-900/80 backdrop-blur-sm text-[10px] tracking-[0.3em] uppercase text-gold/90 border border-gold/30">
+                Interior
+              </span>
+            </div>
+            <figcaption class="mt-5 text-center">
+              <span class="block text-xs tracking-[0.3em] uppercase text-gold mb-1">Interior</span>
+              <span class="text-cream/80">Inside the prayer hall — mihrab, mimbar, and chandelier.</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <p class="text-center mt-12 text-xs tracking-[0.25em] uppercase text-muted/80">
+          Videos play silently. Tap to pause.
+        </p>
+      </div>
+    </section>
+
+    <!-- DONATE -->
+    <section id="donate" class="section bg-gradient-to-b from-ink-900 to-ink-800/60 relative overflow-hidden">
+      <div class="absolute inset-0 bg-pattern-stars opacity-25 pointer-events-none" aria-hidden="true"></div>
+
+      <div class="container-narrow relative">
+        <div class="text-center mb-14" data-reveal>
+          <p class="section-label"><span class="divider-rule"><span>Build it with us</span></span></p>
+          <h2 class="section-title text-balance">Invest in eternity</h2>
+          <p class="text-cream/80 max-w-2xl mx-auto md:text-lg leading-relaxed">
+            We are raising <span class="text-white font-semibold">₦750&nbsp;million</span> to
+            complete construction. Every transfer is a brick in the wall, a verse in the
+            prayer hall, a footstep on the path to Paradise.
+          </p>
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-10" data-reveal>
+          <div class="card text-center">
+            <p class="stat-label">Target</p>
+            <p class="stat-figure mt-3"><span class="text-gold">₦</span>750M</p>
+            <p class="text-xs text-muted mt-1">Total project cost</p>
+          </div>
+          <div class="card text-center border-gold/30">
+            <p class="stat-label">Raised so far</p>
+            <p class="stat-figure mt-3"><span class="text-gold">₦</span>100M</p>
+            <p class="text-xs text-gold mt-1">13.3% of target</p>
+          </div>
+          <div class="card text-center">
+            <p class="stat-label">Still needed</p>
+            <p class="stat-figure mt-3"><span class="text-gold">₦</span>650M</p>
+            <p class="text-xs text-muted mt-1">To break ground &amp; build</p>
+          </div>
+        </div>
+
+        <!-- Progress bar -->
+        <div class="mb-14" data-reveal>
+          <div class="flex items-center justify-between text-xs tracking-[0.2em] uppercase text-muted mb-3">
+            <span>Fundraising progress</span>
+            <span class="text-gold tabular-nums">13.3% &nbsp;·&nbsp; ₦100M / ₦750M</span>
+          </div>
+          <div class="h-2 w-full rounded-full bg-ink-800 overflow-hidden border border-ink-line">
+            <div id="progress-fill"
+                 data-percent="13.3"
+                 class="h-full w-0 bg-gradient-to-r from-gold-deep via-gold to-gold-soft rounded-full transition-all duration-[1400ms] ease-out"></div>
+          </div>
+        </div>
+
+        <!-- Bank card -->
+        <div class="max-w-2xl mx-auto" data-reveal>
+          <div class="card border-gold/30 relative overflow-hidden">
+            <div class="absolute -top-16 -right-16 w-48 h-48 rounded-full bg-gold/10 blur-3xl pointer-events-none" aria-hidden="true"></div>
+
+            <p class="section-label !mb-2">Bank transfer</p>
+            <h3 class="font-display text-2xl text-white mb-6">Donation account details</h3>
+
+            <dl class="space-y-5">
+              <div class="flex items-baseline justify-between gap-4 pb-4 border-b border-ink-line">
+                <dt class="stat-label">Bank</dt>
+                <dd class="text-white font-medium">Zenith Bank</dd>
+              </div>
+
+              <div class="flex items-center justify-between gap-4 pb-4 border-b border-ink-line">
+                <dt class="stat-label">Account number</dt>
+                <dd class="flex items-center gap-3">
+                  <span id="account-number"
+                        class="font-display text-xl md:text-2xl text-white tabular-nums tracking-wider">
+                    1312095834
+                  </span>
+                  <button id="copy-account" type="button"
+                          class="inline-flex items-center gap-1.5 text-xs tracking-[0.2em] uppercase
+                                 text-gold hover:text-gold-soft border border-gold/40 hover:border-gold
+                                 rounded-md px-3 py-1.5 transition"
+                          aria-label="Copy account number to clipboard">
+                    <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span class="copy-label">Copy</span>
+                  </button>
+                </dd>
+              </div>
+
+              <div class="flex items-baseline justify-between gap-4">
+                <dt class="stat-label shrink-0">Account name</dt>
+                <dd class="text-white text-right text-pretty">
+                  At Tasfiyah Wat Tarbiyah Islamic Learning Centre
+                </dd>
+              </div>
+            </dl>
+
+            <p class="mt-6 text-xs text-muted leading-relaxed">
+              Please confirm the account details by phone with one of the contacts below before
+              transferring. Send your name with the transfer if you would like a duʿāʾ made for you.
+            </p>
+          </div>
+        </div>
+
+        <p class="text-center mt-16 font-display italic text-lg text-cream/80 max-w-2xl mx-auto" data-reveal>
+          “Whoever builds a masjid for Allāh, Allāh will build a house for him in Paradise.”
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section bg-ink-900">
+      <div class="container-narrow">
+        <div class="text-center mb-14" data-reveal>
+          <p class="section-label"><span class="divider-rule"><span>Get in touch</span></span></p>
+          <h2 class="section-title">For enquiries</h2>
+          <p class="text-cream/80 max-w-2xl mx-auto md:text-lg">
+            Speak with the project team directly. Tap a number on mobile to call.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <article class="card card-hover text-center" data-reveal>
+            <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center text-gold">
+              <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h3 class="font-display text-xl text-white mb-1">Imam Suleiman Fulani</h3>
+            <p class="text-cream/70 text-sm mb-6">Imam, VGC Masjid, Lekki</p>
+            <a href="tel:+2348039535129"
+               class="inline-block font-display text-lg text-gold hover:text-gold-soft tabular-nums tracking-wider">
+              0803&nbsp;953&nbsp;5129
+            </a>
+          </article>
+
+          <article class="card card-hover text-center border-gold/20" data-reveal>
+            <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center text-gold">
+              <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+            </div>
+            <h3 class="font-display text-xl text-white mb-1">Shaykh Abu Naasir</h3>
+            <p class="text-cream/70 text-sm mb-6">Lecturer, At-Tasfiyah wat-Tarbiyah</p>
+            <a href="tel:+2348092485517"
+               class="inline-block font-display text-lg text-gold hover:text-gold-soft tabular-nums tracking-wider">
+              0809&nbsp;248&nbsp;5517
+            </a>
+          </article>
+
+          <article class="card card-hover text-center" data-reveal>
+            <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center text-gold">
+              <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <h3 class="font-display text-xl text-white mb-1">Ustadh Hafeedh Olatunji</h3>
+            <p class="text-cream/70 text-sm mb-6">Head Teacher, Final Trust Institute</p>
+            <a href="tel:+2348092958853"
+               class="inline-block font-display text-lg text-gold hover:text-gold-soft tabular-nums tracking-wider">
+              0809&nbsp;295&nbsp;8853
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-ink-800/60 border-t border-ink-line">
+    <div class="container-narrow px-6 py-14 grid md:grid-cols-3 gap-10">
+      <div>
+        <a href="#" class="inline-flex items-center gap-3 mb-4" aria-label="Masjidul Ameen — home">
+          <svg viewBox="0 0 64 64" class="w-10 h-10" aria-hidden="true">
+            <rect width="64" height="64" rx="10" fill="#0A1430" stroke="#C9A24A" stroke-width="2"/>
+            <path d="M32 14 C 22 14, 18 24, 18 34 L 18 52 L 46 52 L 46 34 C 46 24, 42 14, 32 14 Z"
+                  fill="none" stroke="#C9A24A" stroke-width="2.5" stroke-linejoin="round"/>
+            <circle cx="32" cy="26" r="2" fill="#C9A24A"/>
+          </svg>
+          <span class="flex flex-col leading-none">
+            <span dir="rtl" lang="ar" class="font-kufi font-semibold text-2xl text-white">
+              مسجد <span class="text-gold">الأمين</span>
+            </span>
+            <span class="text-[11px] tracking-[0.3em] uppercase text-cream/60 mt-1">
+              Masjidul Ameen
+            </span>
+          </span>
+        </a>
+        <p class="text-cream/70 leading-relaxed">
+          A project of the At-Tasfiyah wat-Tarbiyah Islamic Learning Centre,
+          Osogbo, Osun State, Nigeria.
+        </p>
+        <p class="text-xs text-muted mt-4 tracking-[0.2em] uppercase">An invitation to invest in eternity</p>
+      </div>
+
+      <div>
+        <p class="section-label !mb-3">Donate</p>
+        <p class="text-cream/80 text-sm leading-relaxed">
+          <span class="block text-white">Zenith Bank</span>
+          <span class="block font-display text-lg text-white tabular-nums tracking-wider mt-1">1312095834</span>
+          <span class="block text-cream/70 text-xs mt-1">At Tasfiyah Wat Tarbiyah Islamic Learning Centre</span>
+        </p>
+      </div>
+
+      <div>
+        <p class="section-label !mb-3">Quick links</p>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#hadith"  class="text-cream/80 hover:text-gold transition">The hadith</a></li>
+          <li><a href="#about"   class="text-cream/80 hover:text-gold transition">About the project</a></li>
+          <li><a href="#vision"  class="text-cream/80 hover:text-gold transition">The vision</a></li>
+          <li><a href="#donate"  class="text-cream/80 hover:text-gold transition">Donate</a></li>
+          <li><a href="#contact" class="text-cream/80 hover:text-gold transition">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-ink-line">
+      <div class="container-narrow px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-muted">
+        <p>© <span id="current-year">2026</span> At-Tasfiyah wat-Tarbiyah Islamic Learning Centre · TIN IT9525953</p>
+        <p class="tracking-[0.2em] uppercase">Osogbo · Nigeria</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/src/main.js" defer></script>
+</body>
+</html>

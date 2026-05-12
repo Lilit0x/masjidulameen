@@ -1,0 +1,14 @@
+{
+  "name": "masjidulameen",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Landing page for Masjidul Ameen, Osogbo, Nigeria",
+  "scripts": {
+    "dev": "tailwindcss -i src/input.css -o dist/style.css --watch",
+    "build": "tailwindcss -i src/input.css -o dist/style.css --minify",
+    "serve": "python3 -m http.server 8080"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
